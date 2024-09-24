@@ -8,7 +8,28 @@
     <meta name="description" content="Arun portfolio">
     <meta name="keywords" content="Hello, Arun, template, html, sass, jquery">
     <meta name="author" content="Bucky Maler">
+    <style>
+      #full-slide img {
+         width: 100%; /* Make the image take full width of the container */
+         height: auto; /* Automatically adjust the height to maintain aspect ratio */
+         object-fit: cover; /* Ensures the image covers the container without stretching */
+      }
+
+      ul.banner {
+         list-style: none; /* Removes bullet points from the list */
+         padding: 0;
+         margin: 0;
+         display: flex; /* Display images in a row */
+         overflow: hidden; /* Hide overflow content */
+         max-height: 600px; /* Set the maximum height for your slide section */
+      }
+
+      ul.banner li {
+         flex: 1 0 100%; /* Make each slide take full width of the slider */
+      }
+    </style>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <section id="hero"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 163.5" style="enable-background:new 0 0 100 163.5;" xml:space="preserve">
@@ -47,13 +68,14 @@
         <div class="camera"><img src="assets/img/camera.png" alt="Camera"></div>
         <div class="blurb">
           <h2>I'm  <strong>Arun Gajraj </strong></h2>
-          <h4>but you can call me <strong>Arun.. </strong></h4>
+          <h4><p style = "font-family:Caveat,garamond,serif;font-size:32px;">
+         but you can call me  <strong>Arun.. </strong></h4></p>
           <h5><p>Hey there! I’m an engineer who views the world through the magical lens of a camera.  From sunrises to cityscapes, I freeze moments in time, preserving emotions and stories within each frame. My toolbox includes <u>Adobe Lightroom</u> (for that perfect edit), <u>Adobe Premiere Pro</u> (for weaving visual narratives), and my current obsession—<u>DaVinci Resolve Studio </u>(because color grading is an art form).
 
             But wait, there’s more! As time flowed, so did my passion. I’ve transitioned from photography to the enchanting world of cinema.  <u>Short films</u> have become my canvas—a place where shadows dance, dialogues linger, and emotions collide.
             
-            <br>So here’s my story:</h5><br><h4> An engineer by day, a cinematic dreamer by night.</h4></p>
-          <div class="social"><a href="https://www.instagram.com/arunn.raw?igsh=dDhrbHN2M2VybXA3"><i class="icon-instagram"></i></a><a href="https://x.com/gajraj__arun"><i class="icon-twitter"></i></a><a href="https://www.linkedin.com/in/arun-gajraj/"><i class="icon-"></i></a><a href="#"><i class="icon-pinterest-p"></i></a></div>
+            <br>So here’s my story:</h5><br><h4> <p style = "font-family:Marck Script,garamond,serif;font-size:32px;"> An engineer by day, a cinematic dreamer by night. </p></h4></p>
+          <div class="social"><a href="https://www.instagram.com/arunn.raw?igsh=dDhrbHN2M2VybXA3"><i class="icon-instagram"></i></a><a href="https://x.com/gajraj__arun"><i class="icon-twitter"></i></a><a href="https://www.linkedin.com/in/arun-gajraj/"><i class="fab fa-linkedin"></i></a><a href="https://www.youtube.com/@Arunn462"><i class="fab fa-youtube"></i></a></div>
         </div>
       </div>
     </section>
@@ -63,9 +85,9 @@
 </g>
 </svg>
       <ul class="banner">
-        <li class="active"></li>
-        <li>gyg</li>
-        <li></li>
+        <li class="active"><img src="assets/img/full-slide/a1.jpg"></li>
+        <li ><img src="assets/img/full-slide/a2.jpg"></li>
+        <li ><img src="assets/img/full-slide/a4.jpg"> </li>
       </ul><i class="icon-chevron-thin-left prev"></i><i class="icon-chevron-thin-right next"></i>
     </section>
     <section id="featured"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 248.8" style="enable-background:new 0 0 100 248.8;" xml:space="preserve">
@@ -75,8 +97,8 @@
 </svg>
       <div class="wrapper">
         <div class="blurb">
-          <h2><strong>Ut enim</strong> ad minim</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          <h2><strong>Cinematic Curiosity</strong></h2>
+          <p> <strong>I, specialize in capturing the essence of street, portrait, travel, and landscape photography, where every frame tells a story. Recently, I’ve expanded my creative journey into filmmaking, crafting short films that explore powerful narratives through visual storytelling. Each project, whether a photo or film, is an opportunity to share unique perspectives and emotions, blending art and life into timeless visuals. </strong></h4></p>
         </div>
         <div class="featured"><img src="assets/img/featured.jpg" alt="Featured"></div>
       </div>
@@ -88,10 +110,10 @@
 </svg>
       <div class="wrapper">
         <ul class="slider">
-          <li class="back"><img src="assets/img/three-slide/thumb-1.jpg"></li>
-          <li class="current"><img src="assets/img/three-slide/thumb-2.jpg"></li>
-          <li class="front"><img src="assets/img/three-slide/thumb-3.jpg"></li>
-          <li><img src="assets/img/three-slide/thumb-4.jpg"></li>
+          <li class="back"><img src="assets/img/three-slide/a3.jpg"></li>
+          <li class="current"><img src="assets/img/three-slide/a6.jpg"></li>
+          <li class="front"><img src="assets/img/three-slide/a7.jpg"></li>
+          <li><img src="assets/img/three-slide/a5.jpg"></li>
         </ul>
       </div><i class="icon-chevron-thin-left prev"></i><i class="icon-chevron-thin-right next"></i>
     </section>
@@ -103,7 +125,7 @@
       <div class="wrapper">
         <div class="blurb">
           <h2><strong>Say</strong> Hello</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          <p><strong>If you’re interested in collaborating or have a project in mind, I’d love to connect! Let’s work together to bring your vision to life—whether through photography or film. Feel free to reach out, and let’s create something amazing!</strong></p>
         </div>
         <form>
           <input type="email" placeholder="Your Email">
